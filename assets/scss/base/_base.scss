@@ -17,3 +17,27 @@ body {
     box-shadow: $box-shadow;
 
 }
+
+.mb-4 {
+
+    margin-bottom: 40px;
+
+}
+
+.w-758 {
+
+    width: 758px;
+
+}
+
+.clf {
+
+    &::after {
+
+        clear: both;
+        content: '';
+        display: block;
+
+    }
+
+}

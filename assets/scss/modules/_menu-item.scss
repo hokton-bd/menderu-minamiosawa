@@ -1,0 +1,52 @@
+.menu-item {
+
+    float: left;
+
+    &__head {
+
+        width: 100%;
+        margin-bottom: 50px;
+
+    }
+
+    &__body {
+
+        padding: 0 35px;
+
+    }
+
+    &__title {
+
+        font-size: 24px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        margin-bottom: 30px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+
+        &::after {
+
+            position: absolute;
+            content: '';
+            display: inline-block;
+            background: $black;
+            width: 110%;
+            height: 5px;
+            bottom: 0;
+            left: 50%;
+            border-radius: 10px;
+            transform: translateX(-50%);
+
+        }
+
+    }
+
+    &__price {
+
+        // margin-left: 66px;
+        font-size: 18px;
+
+    }
+
+}

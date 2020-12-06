@@ -339,11 +339,74 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+.mb-4 {
+  margin-bottom: 40px;
+}
+
+.w-758 {
+  width: 758px;
+}
+
+.clf::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
 .inner {
   max-width: 1312px;
   width: 100%;
   padding: 0 16px;
   margin: 0 auto;
+}
+
+.section__title {
+  margin-bottom: 100px;
+}
+
+.section-title {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-title__txt {
+  font-size: 60px;
+  font-family: "wafu";
+  margin: 0 50px 0 150px;
+}
+
+.section-title::before {
+  content: '';
+  background: #222;
+  width: 100px;
+  height: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.section-title::after {
+  content: '';
+  background: #222;
+  height: 10px;
+  border-radius: 10px;
+  width: 900px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+
+.section-title--after-width__758::after {
+  width: 758px;
+}
+
+.section-title--after-width__839::after {
+  width: 839px;
 }
 
 .logo__link {
@@ -397,4 +460,62 @@ body {
   left: 50%;
   transform: translateX(-50%);
   top: -5%;
+}
+
+.menu__inner {
+  padding-top: 80px;
+}
+
+.menu-list {
+  padding-bottom: 20px;
+}
+
+.menu-list__item {
+  width: calc(100% - 66.6666% - 60px);
+  margin-right: 60px;
+  margin-bottom: 80px;
+}
+
+.menu-list__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.menu-item {
+  float: left;
+}
+
+.menu-item__head {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.menu-item__body {
+  padding: 0 35px;
+}
+
+.menu-item__title {
+  font-size: 24px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  margin-bottom: 30px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item__title::after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  background: #222;
+  width: 110%;
+  height: 5px;
+  bottom: 0;
+  left: 50%;
+  border-radius: 10px;
+  transform: translateX(-50%);
+}
+
+.menu-item__price {
+  font-size: 18px;
 }
