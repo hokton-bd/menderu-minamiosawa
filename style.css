@@ -288,7 +288,7 @@ img {
   /* Remove border when inside `a` element in IE 8/9/10 */
   width: 100%;
   height: auto;
-  vertical-align: baseline;
+  vertical-align: bottom;
 }
 
 /* Add the correct vertical alignment in Chrome, Firefox, and Opera */
@@ -335,11 +335,23 @@ body {
   line-height: 1;
 }
 
+.box-shadow {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
 .inner {
   max-width: 1312px;
   width: 100%;
   padding: 0 16px;
   margin: 0 auto;
+}
+
+.logo__link {
+  display: block;
+}
+
+.header__global-nav {
+  margin-bottom: 100px;
 }
 
 .global-nav-inner {
@@ -359,8 +371,30 @@ body {
 .nav-menu__link {
   font-family: "wafu";
   font-size: 40px;
+  line-height: 1.5;
 }
 
 .nav-menu__link:visited {
   color: #222;
+}
+
+.hero-view__inner {
+  display: flex;
+  position: relative;
+}
+
+.hero-view__image-left {
+  width: 50%;
+}
+
+.hero-view__image-right {
+  width: 50%;
+}
+
+.hero-view__image-center {
+  position: absolute;
+  width: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -5%;
 }

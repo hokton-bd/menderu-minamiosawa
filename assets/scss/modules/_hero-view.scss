@@ -1,0 +1,35 @@
+.hero-view {
+
+    &__inner {
+
+        display: flex;
+        position: relative;
+
+    }
+
+
+    &__image-left {
+
+        width: 50%;
+
+    }
+
+    &__image-right {
+
+        width: 50%;
+
+    }
+
+
+    &__image-center {
+
+        position: absolute;
+        width: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -5%;
+
+    }
+
+
+}
