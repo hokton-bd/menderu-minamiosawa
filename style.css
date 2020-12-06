@@ -464,6 +464,7 @@ body {
 
 .menu__inner {
   padding-top: 80px;
+  padding-bottom: 100px;
 }
 
 .menu-list {
@@ -480,6 +481,10 @@ body {
   margin-right: 0;
 }
 
+.menu-list__item:nth-child(4) {
+  margin-bottom: 0;
+}
+
 .menu-item {
   float: left;
 }
@@ -487,6 +492,12 @@ body {
 .menu-item__head {
   width: 100%;
   margin-bottom: 50px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.menu-item__head img {
+  border-radius: 10px;
 }
 
 .menu-item__body {
@@ -518,4 +529,17 @@ body {
 
 .menu-item__price {
   font-size: 18px;
+}
+
+.takeout__inner {
+  padding-bottom: 100px;
+}
+
+.takeout__video {
+  margin: 0 auto;
+}
+
+.takeout__video video {
+  display: block;
+  margin: 0 auto;
 }

@@ -11,3 +11,7 @@
 .menu-list__item:nth-child(3n) {
   margin-right: 0;
 }
+
+.menu-list__item:nth-child(4) {
+  margin-bottom: 0;
+}
