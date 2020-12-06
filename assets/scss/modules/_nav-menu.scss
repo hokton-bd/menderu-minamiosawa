@@ -1,0 +1,25 @@
+.nav-menu {
+
+    display: flex;
+
+    &__item {
+
+        margin-left: 58px;
+
+    }
+
+    &__link {
+
+        font-family: $wafu;
+        font-size: 40px;
+        line-height: 1.5;
+
+        &:visited {
+
+            color: $black;
+
+        }
+
+    }
+
+}

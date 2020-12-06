@@ -1,0 +1,19 @@
+//font
+@font-face {
+    font-family: 'wafu'; //好きな名前を設定します。
+    src: url('assets/shokakiutage.ttf') format('truetype');
+}
+$wafu: 'wafu';
+$ff: 'ヒラギノ角ゴシック';
+
+//colors
+$black: #222;
+$light-yellow: #FFEAA2;
+$body-bg: #FFD445;
+
+$layout-width-inner: 1312px;
+$breakpoints: (
+  "sp": "screen and (max-width: 767px)",
+  "tab": "screen and (max-width: 1024px)",
+  "pc": "screen and (min-width: 1025px)"
+);
