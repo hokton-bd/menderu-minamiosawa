@@ -1,0 +1,21 @@
+.global-nav {
+
+    margin-bottom: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: $transition;
+
+}
+
+.js-global-nav--scroll {
+
+    background: $black;
+
+    .inner {
+
+        padding: 20px 0;
+
+    }
+
+}

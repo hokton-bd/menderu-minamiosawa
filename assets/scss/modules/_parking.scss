@@ -1,0 +1,38 @@
+.parking {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__title {
+
+        width: 100%;
+        font-size: 30px;
+        margin-bottom: 44px;
+        text-align: center;
+
+    }
+
+    &__caution {
+
+        width: 100%;
+        font-size: 14px;
+        margin-top: 25px;
+        text-align: center;
+        color: #444444;
+
+    }
+
+    &__left {
+
+        width: 57%;
+
+    }
+
+    &__right {
+
+        width: 38%;
+
+    }
+
+}

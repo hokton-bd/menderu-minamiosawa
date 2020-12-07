@@ -1,0 +1,19 @@
+.media {
+
+    display: flex;
+    justify-content: space-between;
+
+    &__map {
+
+        width: 50%;
+
+    }
+
+    &__parking {
+
+        width: 45%;
+
+    }
+
+
+}

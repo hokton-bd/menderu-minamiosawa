@@ -1,0 +1,14 @@
+.shop-info-content-left__title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.shop-info-content-left__slide {
+  margin-bottom: 100px;
+}
+
+.shop-info-content-left__table {
+  width: 80%;
+  margin: 0 auto;
+}

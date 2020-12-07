@@ -413,14 +413,31 @@ body {
   display: block;
 }
 
-.header__global-nav {
+.header__hero-view {
+  padding-bottom: 100px;
+}
+
+.global-nav {
   margin-bottom: 100px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all 0.3s ease 0s;
+}
+
+.js-global-nav--scroll {
+  background: #222;
+}
+
+.js-global-nav--scroll .inner {
+  padding: 20px 0;
 }
 
 .global-nav-inner {
   padding-top: 80px;
   display: flex;
   justify-content: space-between;
+  transition: all 0.3s ease 0s;
 }
 
 .nav-menu {
@@ -435,10 +452,27 @@ body {
   font-family: "wafu";
   font-size: 40px;
   line-height: 1.5;
+  color: #222;
 }
 
 .nav-menu__link:visited {
   color: #222;
+}
+
+.nav-menu__link:hover {
+  color: #222;
+}
+
+.js-global-nav--scroll .nav-menu__link {
+  color: white;
+}
+
+.js-global-nav--scroll .nav-menu__link:visited {
+  color: white;
+}
+
+.js-global-nav--scroll .nav-menu__link:hover {
+  color: white;
 }
 
 .hero-view__inner {
@@ -463,7 +497,6 @@ body {
 }
 
 .menu__inner {
-  padding-top: 80px;
   padding-bottom: 100px;
 }
 
@@ -542,4 +575,124 @@ body {
 .takeout__video video {
   display: block;
   margin: 0 auto;
+}
+
+.access__inner {
+  padding-bottom: 100px;
+}
+
+.media {
+  display: flex;
+  justify-content: space-between;
+}
+
+.media__map {
+  width: 50%;
+}
+
+.media__parking {
+  width: 45%;
+}
+
+.parking {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.parking__title {
+  width: 100%;
+  font-size: 30px;
+  margin-bottom: 44px;
+  text-align: center;
+}
+
+.parking__caution {
+  width: 100%;
+  font-size: 14px;
+  margin-top: 25px;
+  text-align: center;
+  color: #444444;
+}
+
+.parking__left {
+  width: 57%;
+}
+
+.parking__right {
+  width: 38%;
+}
+
+.shop-info__inner {
+  padding-bottom: 100px;
+}
+
+.shop-info-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shop-info-content__left {
+  width: 70%;
+}
+
+.shop-info-content__right {
+  width: 24%;
+}
+
+.shop-info-content-left__title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.shop-info-content-left__slide {
+  margin-bottom: 100px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.shop-info-content-left__table {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.twitter__title {
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.twitter iframe {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.table tr {
+  padding: 5px 0;
+}
+
+.table tr:nth-child(odd) {
+  background: #FFEAA2;
+}
+
+.table th {
+  padding: 5px 80px;
+  vertical-align: middle;
+}
+
+.footer {
+  background: #222;
+}
+
+.footer__inner {
+  padding: 24px 0;
+}
+
+.footer__copyright {
+  text-align: center;
+  color: white;
+  font-size: 14px;
 }

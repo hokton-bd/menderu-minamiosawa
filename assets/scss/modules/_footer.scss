@@ -1,0 +1,19 @@
+.footer {
+
+    background: $black;
+
+    &__inner {
+
+        padding: 24px 0;
+
+    }
+
+    &__copyright {
+
+        text-align: center;
+        color: white;
+        font-size: 14px;
+
+    }
+
+}

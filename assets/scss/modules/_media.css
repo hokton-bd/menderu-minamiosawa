@@ -1,0 +1,12 @@
+.media {
+  display: flex;
+  justify-content: space-between;
+}
+
+.media__map {
+  width: 50%;
+}
+
+.media__parking {
+  width: 45%;
+}
