@@ -1,0 +1,26 @@
+.drawer-nav {
+
+    padding: 40px;
+
+    &__item {
+
+        text-align: right;
+        margin-bottom: 46px;
+
+    }
+
+    &__logo {
+
+        margin-bottom: 130px;
+
+    }
+
+    &__link {
+
+        font-size: 30px;
+        color: white;
+        font-family: $wafu;
+
+    }
+
+}

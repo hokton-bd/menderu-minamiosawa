@@ -12,6 +12,12 @@
 
     }
 
+    @include mq('tab') {
+
+        display: none;
+
+    }
+
 }
 
 .js-global-nav--scroll {

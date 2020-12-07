@@ -447,6 +447,12 @@ body {
   margin: 0;
 }
 
+@media screen and (max-width: 1024px) {
+  .global-nav {
+    display: none;
+  }
+}
+
 .js-global-nav--scroll {
   background: #222;
 }
@@ -741,4 +747,102 @@ body {
   text-align: center;
   color: white;
   font-size: 14px;
+}
+
+.drawer {
+  display: none;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: all 0.3s ease 0s;
+}
+
+@media screen and (max-width: 1024px) {
+  .drawer {
+    display: block;
+  }
+  .drawer__inner {
+    display: flex;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .drawer__logo {
+    display: block;
+  }
+  .drawer__closer {
+    display: none;
+  }
+  .drawer__toggler {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .drawer__toggler .fas {
+    font-size: 42px;
+  }
+  .drawer__content {
+    display: none;
+    background: #222;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+  }
+  .drawer__closer {
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
+
+.js-drawer--scroll {
+  background: #222;
+}
+
+.js-drawer--scroll .drawer__inner {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.js-drawer--scroll .drawer__toggler .fas {
+  color: white;
+}
+
+.drawer--active .drawer__opener {
+  display: none;
+}
+
+.drawer--active .drawer__closer {
+  display: block;
+}
+
+.drawer--active .drawer__content {
+  display: block;
+}
+
+.drawer-nav {
+  padding: 40px;
+}
+
+.drawer-nav__item {
+  text-align: right;
+  margin-bottom: 46px;
+}
+
+.drawer-nav__logo {
+  margin-bottom: 130px;
+}
+
+.drawer-nav__link {
+  font-size: 30px;
+  color: white;
+  font-family: "wafu";
 }

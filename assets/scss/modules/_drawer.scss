@@ -1,0 +1,119 @@
+.drawer {
+
+    display: none;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: $transition;
+
+    @include mq('tab') {
+
+        display: block;
+
+        &__inner {
+            display: flex;
+            position: relative;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        &__logo {
+
+            display: block;
+
+        }
+
+        &__closer {
+
+            display: none;
+
+        }
+
+        &__toggler {
+
+            position: absolute;
+            right: 2%;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+
+            .fas {
+
+                font-size: 42px;
+
+            }
+
+        }
+
+        &__content {
+
+            display: none;
+            background: $black;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 60%;
+
+        }
+
+        &__closer {
+
+            background: rgba(0, 0, 0, .3);
+            display: none;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+
+        }
+
+    }
+
+}
+
+.js-drawer--scroll {
+
+    background: $black;
+
+    .drawer__inner {
+
+        padding-top: 24px;
+        padding-bottom: 24px;
+
+    }
+
+    .drawer__toggler {
+
+        .fas {
+
+            color: white;
+
+        }
+
+    }
+
+}
+
+.drawer--active {
+
+    .drawer__opener {
+
+        display: none;
+
+    }
+
+    .drawer__closer {
+
+        display: block;
+
+    }
+
+    .drawer__content {
+
+        display: block;
+
+    }
+
+}
