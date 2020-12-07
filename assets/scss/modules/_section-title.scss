@@ -39,6 +39,12 @@
         transform: translateY(-50%);
         overflow: hidden;
 
+        @include mq('tab') {
+
+            width: 610px;
+
+        }
+
     }
 
 }
@@ -48,6 +54,12 @@
     &::after {
 
         width: 758px;
+
+        @include mq('tab') {
+
+            width: 468px;
+
+        }
 
     }
 
@@ -59,6 +71,12 @@
     &::after {
 
         width: 839px;
+
+        @include mq('tab') {
+
+            width: 548px;
+
+        }
 
     }
 

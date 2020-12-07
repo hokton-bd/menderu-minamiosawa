@@ -19,6 +19,12 @@
         padding: 5px 80px;
         vertical-align: middle;
 
+        @include mq('tab') {
+
+            padding: 5px 30px;
+
+        }
+
     }
 
 

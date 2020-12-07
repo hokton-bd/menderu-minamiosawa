@@ -21,6 +21,12 @@
         text-align: center;
         color: #444444;
 
+        @include mq('tab') {
+
+            font-size: 13px;
+
+        }
+
     }
 
     &__left {

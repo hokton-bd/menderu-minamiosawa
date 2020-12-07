@@ -11,7 +11,7 @@
     &__link {
 
         font-family: $wafu;
-        font-size: 40px;
+        font-size: 32px;
         line-height: 1.5;
         color: $black;
 
@@ -24,6 +24,16 @@
         &:hover {
 
             color: $black;
+
+        }
+
+    }
+
+    @include mq('tab') {
+
+        &__link {
+
+            line-height: 2;
 
         }
 
