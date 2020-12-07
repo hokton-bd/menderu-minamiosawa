@@ -1,12 +1,27 @@
 .shop-info-content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .shop-info-content__left {
   width: 70%;
 }
 
+@media screen and (max-width: 986px) {
+  .shop-info-content__left {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+}
+
 .shop-info-content__right {
   width: 24%;
+}
+
+@media screen and (max-width: 986px) {
+  .shop-info-content__right {
+    width: 50%;
+    margin: 0 auto;
+  }
 }

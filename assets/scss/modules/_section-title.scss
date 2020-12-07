@@ -10,6 +10,12 @@
         font-family: $wafu;
         margin: 0 50px 0 150px;
 
+        @media screen and(max-width: 986px) {
+            
+            font-size: 42px;
+
+        }
+
     }
 
     &::before {
@@ -45,6 +51,12 @@
 
         }
 
+        @media screen and(max-width: 986px) {
+
+            width: 393px;
+
+        }
+
     }
 
 }
@@ -55,12 +67,18 @@
 
         width: 758px;
 
+        
         @include mq('tab') {
-
+            
             width: 468px;
+            
+        }
+        @media screen and(max-width: 986px) {
+            
+            width: 310px;
 
         }
-
+        
     }
 
 
@@ -75,6 +93,12 @@
         @include mq('tab') {
 
             width: 548px;
+
+        }
+
+        @media screen and(max-width: 986px) {
+            
+            width: 366px;
 
         }
 

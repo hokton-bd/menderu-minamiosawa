@@ -27,6 +27,25 @@
 
         }
 
+        @media screen and(max-width: 986px) {
+
+            width: calc(50% - 32px);
+            margin-right: 64px;
+
+            &:nth-child(3n) {
+
+                margin-right: 64px;
+
+            }
+
+            &:nth-child(even) {
+
+                margin-right: 0;
+
+            }
+
+        }
+
     }
 
 }

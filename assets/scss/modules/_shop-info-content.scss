@@ -2,16 +2,31 @@
 
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     &__left {
 
         width: 70%;
+
+        @media screen and(max-width: 986px) {
+
+            width: 100%;
+            margin-bottom: 48px;
+
+        }
 
     }
 
     &__right {
 
         width: 24%;
+
+        @media screen and(max-width: 986px) {
+
+            width: 50%;
+            margin: 0 auto;
+
+        }
 
     }
 
