@@ -6,7 +6,18 @@ $(document).ready(function() {
                 var adjust = -300;
 
             } else {
-                var adjust = -150;
+
+                if($(window).width >= 1024) {
+                    
+                    var adjust = -150;
+
+                } else {
+
+                    var adjust = -200;
+
+                }
+
+
             }
 
             if($('.drawer').hasClass('drawer--active')) {
@@ -53,5 +64,20 @@ $(document).ready(function() {
         $('.drawer').removeClass('drawer--active');
 
     });
+
+
+    
+
+});
+
+$(window).on('load reseize', function() {
+
+    if($(window).width() < 800) {
+
+        // $('.twitter-timeline').attr('data-height', attr('628'));
+        // $('.twitter-timeline').attr('data-height', attr('400'));
+
+
+    }
 
 });

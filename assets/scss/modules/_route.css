@@ -1,0 +1,18 @@
+.route__title {
+  width: 100%;
+  font-size: 30px;
+  margin-bottom: 44px;
+  text-align: center;
+}
+
+.route__caption {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 986px) {
+  .route__caption {
+    font-size: 20px;
+  }
+}

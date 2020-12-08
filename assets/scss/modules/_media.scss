@@ -1,17 +1,51 @@
 .media {
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 
     &__map {
 
         width: 50%;
+        margin: 0 25%;
+
+        @media screen and(max-width: 986px) {
+            
+            width: 100%;
+            margin: 0 auto;
+
+        }
+
+    }
+
+    &__route {
+
+        width: 49%;
+        margin-right: 6%;
+        margin-top: 48px;
+
+        @media screen and(max-width: 986px) {
+            
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 80px;
+
+        }
 
     }
 
     &__parking {
 
         width: 45%;
+        margin-top: 48px;
+        
+        @media screen and(max-width: 986px) {
+            
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 80px;
+
+        }
 
     }
 

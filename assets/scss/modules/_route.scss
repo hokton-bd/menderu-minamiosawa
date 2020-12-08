@@ -1,0 +1,32 @@
+.route {
+
+    &__carousel {
+
+        box-shadow: $box-shadow;
+
+    }
+
+    &__title {
+
+        width: 100%;
+        font-size: 30px;
+        margin-bottom: 44px;
+        text-align: center;
+
+    }
+
+    &__caption {
+
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+
+        @media screen and(max-width: 986px) {
+
+            font-size: 20px;
+
+        }
+
+    }
+
+}

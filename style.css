@@ -668,6 +668,7 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: 986px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .takeout__video video {
@@ -682,15 +683,47 @@ body {
 
 .media {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .media__map {
   width: 50%;
+  margin: 0 25%;
+}
+
+@media screen and (max-width: 986px) {
+  .media__map {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.media__route {
+  width: 49%;
+  margin-right: 6%;
+  margin-top: 48px;
+}
+
+@media screen and (max-width: 986px) {
+  .media__route {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
 }
 
 .media__parking {
   width: 45%;
+  margin-top: 48px;
+}
+
+@media screen and (max-width: 986px) {
+  .media__parking {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
 }
 
 .parking {
@@ -728,6 +761,29 @@ body {
   width: 38%;
 }
 
+.route__carousel {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.route__title {
+  width: 100%;
+  font-size: 30px;
+  margin-bottom: 44px;
+  text-align: center;
+}
+
+.route__caption {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 986px) {
+  .route__caption {
+    font-size: 20px;
+  }
+}
+
 .shop-info__inner {
   padding-bottom: 100px;
 }
@@ -755,7 +811,7 @@ body {
 
 @media screen and (max-width: 986px) {
   .shop-info-content__right {
-    width: 50%;
+    width: 55%;
     margin: 0 auto;
   }
 }

@@ -1,1 +1,1 @@
-.media{display:flex;justify-content:space-between}.media__map{width:50%}.media__parking{width:45%}
+.media{display:flex;justify-content:center;flex-wrap:wrap}.media__map{width:50%;margin:0 25%}@media screen and (max-width: 986px){.media__map{width:100%;margin:0 auto}}.media__route{width:49%;margin-right:6%;margin-top:48px}@media screen and (max-width: 986px){.media__route{width:100%;margin:0 auto;margin-top:80px}}.media__parking{width:45%;margin-top:48px}@media screen and (max-width: 986px){.media__parking{width:100%;margin:0 auto;margin-top:80px}}
