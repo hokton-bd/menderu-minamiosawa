@@ -611,8 +611,21 @@ body {
   }
 }
 
+.menu {
+  background: #222;
+}
+
+.menu * {
+  color: white;
+}
+
 .menu__inner {
-  padding-bottom: 100px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.menu__section-title::before, .menu__section-title::after {
+  background: white;
 }
 
 .menu-list {
@@ -737,7 +750,8 @@ body {
 }
 
 .takeout__inner {
-  padding-bottom: 100px;
+  padding-top: 40px;
+  padding-bottom: 60px;
 }
 
 .takeout__video {
@@ -753,8 +767,21 @@ body {
   margin: 0 auto;
 }
 
+.access {
+  background: #222;
+}
+
+.access * {
+  color: white;
+}
+
 .access__inner {
-  padding-bottom: 100px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.access__section-title::before, .access__section-title::after {
+  background: white;
 }
 
 .media {
@@ -820,7 +847,7 @@ body {
   font-size: 14px;
   margin-top: 25px;
   text-align: center;
-  color: #444444;
+  color: white;
 }
 
 @media screen and (max-width: 1024px) {
@@ -878,7 +905,8 @@ body {
 }
 
 .shop-info__inner {
-  padding-bottom: 100px;
+  padding-top: 40px;
+  padding-bottom: 60px;
 }
 
 .shop-info-content {

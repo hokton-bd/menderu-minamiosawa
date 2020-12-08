@@ -1,8 +1,28 @@
 .menu {
 
+    background: $black;
+
+    * {
+
+        color: white;
+
+    }
+
     &__inner {
 
-        padding-bottom: 100px;
+        padding-top: 40px;
+        padding-bottom: 60px;
+
+    }
+
+    &__section-title {
+
+        &::before, &::after {
+
+            background: white;
+
+        }
+
 
     }
 
