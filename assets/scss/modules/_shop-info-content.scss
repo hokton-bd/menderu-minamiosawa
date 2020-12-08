@@ -28,6 +28,12 @@
 
         }
 
+        @include mq('sp') {
+
+            width: 90%;
+
+        }
+
     }
 
 }

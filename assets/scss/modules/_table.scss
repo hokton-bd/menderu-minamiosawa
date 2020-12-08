@@ -27,5 +27,15 @@
 
     }
 
+    @include mq('sp') {
+
+        td {
+
+            vertical-align: middle;
+
+        }
+
+    }
+
 
 }

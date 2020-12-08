@@ -14,4 +14,12 @@
 
     }
 
+    @include mq('sp') {
+
+        &__title {
+            font-size: 24px;
+        }
+
+    }
+
 }

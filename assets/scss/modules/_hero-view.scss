@@ -4,6 +4,7 @@
 
         display: flex;
         position: relative;
+        transition: $transition;
 
     }
 
@@ -11,12 +12,14 @@
     &__image-left {
 
         width: 50%;
+        transition: $transition;
 
     }
 
     &__image-right {
 
         width: 50%;
+        transition: $transition;
 
     }
 
@@ -28,6 +31,41 @@
         left: 50%;
         transform: translateX(-50%);
         top: -5%;
+        transition: $transition;
+
+    }
+
+    @include mq('sp') {
+
+        &__inner {
+
+            display: block;
+
+        }
+
+        &__image-left {
+
+            width: 100%;
+            margin-left: -4%;
+            margin-bottom: 125px;
+
+        }
+
+        &__image-right {
+
+            width: 100%;
+            margin-left: 4%;
+
+        }
+
+        &__image-center {
+
+            width: 30%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
 
     }
 

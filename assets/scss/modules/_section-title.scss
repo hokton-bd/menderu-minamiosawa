@@ -59,6 +59,29 @@
 
     }
 
+    @include mq('sp') {
+
+        &__txt {
+
+            font-size: 30px;
+            margin: 0 20px 0 70px;
+
+        }
+
+        &::before {
+
+            width: 50px;
+
+        }
+
+        &::after {
+
+            width: 214px;
+
+        }
+
+    }
+
 }
 
 .section-title--after-width__758 {
@@ -81,6 +104,15 @@
         
     }
 
+    @include mq('sp') {
+
+        &::after {
+            width: 144px;
+
+        }
+
+    }
+
 
 }
 
@@ -99,6 +131,16 @@
         @media screen and(max-width: 986px) {
             
             width: 366px;
+
+        }
+
+    }
+
+    @include mq('sp') {
+
+        &::after {
+
+            width: 184px;
 
         }
 

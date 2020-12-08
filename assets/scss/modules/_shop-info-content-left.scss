@@ -22,4 +22,21 @@
 
     }
 
+    @include mq('sp') {
+
+        &__title {
+
+            font-size: 24px;
+            margin-bottom: 32px;
+
+        }
+
+        &__table {
+
+            width: 100%;
+
+        }
+
+    }
+
 }

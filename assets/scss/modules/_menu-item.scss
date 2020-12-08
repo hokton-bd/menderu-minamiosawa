@@ -80,4 +80,14 @@
 
     }
 
+    @include mq('sp') {
+
+        &__head {
+
+            margin-bottom: 30px;
+
+        }
+
+    }
+
 }

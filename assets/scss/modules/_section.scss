@@ -6,4 +6,13 @@
 
     }
 
+
+    @include mq('sp') {
+
+        &__title {
+            margin-bottom: 50px;
+        }
+
+    }
+
 }

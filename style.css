@@ -95,6 +95,7 @@ a:hover {
 
 ul {
   list-style: none;
+  margin-bottom: 0;
 }
 
 code,
@@ -364,6 +365,12 @@ body {
   margin-bottom: 100px;
 }
 
+@media screen and (max-width: 767px) {
+  .section__title {
+    margin-bottom: 50px;
+  }
+}
+
 .section-title {
   display: flex;
   position: relative;
@@ -419,6 +426,19 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .section-title__txt {
+    font-size: 30px;
+    margin: 0 20px 0 70px;
+  }
+  .section-title::before {
+    width: 50px;
+  }
+  .section-title::after {
+    width: 214px;
+  }
+}
+
 .section-title--after-width__758::after {
   width: 758px;
 }
@@ -435,6 +455,12 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .section-title--after-width__758::after {
+    width: 144px;
+  }
+}
+
 .section-title--after-width__839::after {
   width: 839px;
 }
@@ -448,6 +474,12 @@ body {
 @media screen and (max-width: 986px) {
   .section-title--after-width__839::after {
     width: 366px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-title--after-width__839::after {
+    width: 184px;
   }
 }
 
@@ -536,14 +568,17 @@ body {
 .hero-view__inner {
   display: flex;
   position: relative;
+  transition: all 0.3s ease 0s;
 }
 
 .hero-view__image-left {
   width: 50%;
+  transition: all 0.3s ease 0s;
 }
 
 .hero-view__image-right {
   width: 50%;
+  transition: all 0.3s ease 0s;
 }
 
 .hero-view__image-center {
@@ -552,6 +587,28 @@ body {
   left: 50%;
   transform: translateX(-50%);
   top: -5%;
+  transition: all 0.3s ease 0s;
+}
+
+@media screen and (max-width: 767px) {
+  .hero-view__inner {
+    display: block;
+  }
+  .hero-view__image-left {
+    width: 100%;
+    margin-left: -4%;
+    margin-bottom: 125px;
+  }
+  .hero-view__image-right {
+    width: 100%;
+    margin-left: 4%;
+  }
+  .hero-view__image-center {
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .menu__inner {
@@ -591,6 +648,19 @@ body {
     margin-right: 64px;
   }
   .menu-list__item:nth-child(even) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-list {
+    padding-bottom: 0;
+  }
+  .menu-list__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .menu-list__item:nth-child(3n) {
     margin-right: 0;
   }
 }
@@ -657,6 +727,12 @@ body {
 @media screen and (max-width: 1024px) {
   .menu-item__name {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-item__head {
+    margin-bottom: 30px;
   }
 }
 
@@ -761,6 +837,13 @@ body {
   width: 38%;
 }
 
+@media screen and (max-width: 767px) {
+  .parking__title {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+}
+
 .route__carousel {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
@@ -781,6 +864,16 @@ body {
 @media screen and (max-width: 986px) {
   .route__caption {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .route__title {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+  .route__caption {
+    font-size: 16px;
   }
 }
 
@@ -816,6 +909,12 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .shop-info-content__right {
+    width: 90%;
+  }
+}
+
 .shop-info-content-left__title {
   text-align: center;
   font-size: 30px;
@@ -832,6 +931,16 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 767px) {
+  .shop-info-content-left__title {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+  .shop-info-content-left__table {
+    width: 100%;
+  }
+}
+
 .twitter__title {
   font-size: 30px;
   margin-bottom: 30px;
@@ -840,6 +949,12 @@ body {
 
 .twitter iframe {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 767px) {
+  .twitter__title {
+    font-size: 24px;
+  }
 }
 
 .table {
@@ -862,6 +977,12 @@ body {
 @media screen and (max-width: 1024px) {
   .table th {
     padding: 5px 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .table td {
+    vertical-align: middle;
   }
 }
 
@@ -937,6 +1058,12 @@ body {
 @media screen and (max-width: 1024px) {
   .drawer {
     display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .drawer__logo {
+    width: 50%;
   }
 }
 
