@@ -23,4 +23,41 @@
 
     }
 
+    &__btn {
+
+        background: $body-bg;
+        padding: 16px 32px;
+        padding-right: 60px;
+        box-shadow: $box-shadow;
+        margin-top: 32px;
+        position: relative;
+
+        &::after {
+
+            content: '\f124';
+            position: absolute;
+            color: $black;
+            display: inline-block;
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            right: 12%;
+            top: 50%;
+            transform: translateY(-50%);
+
+        }
+
+        &:hover {
+
+            opacity: .7;
+
+        }
+    
+        a {
+
+            color: $black;
+
+        }
+
+    }
+
 }

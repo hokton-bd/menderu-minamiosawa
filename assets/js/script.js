@@ -13,7 +13,7 @@ $(document).ready(function() {
 
                 } else {
 
-                    var adjust = -200;
+                    var adjust = -110;
 
                 }
 
@@ -67,17 +67,5 @@ $(document).ready(function() {
 
 
     
-
-});
-
-$(window).on('load reseize', function() {
-
-    if($(window).width() < 800) {
-
-        // $('.twitter-timeline').attr('data-height', attr('628'));
-        // $('.twitter-timeline').attr('data-height', attr('400'));
-
-
-    }
 
 });
